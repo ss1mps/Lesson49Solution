@@ -11,5 +11,15 @@
 #include "logic.h"
 
 int count_zero_elements(int array[], int size) {
-	return 0;
+	if (size <= 0) {
+		return -1;
+	}
+	int count = 0;
+	for (int i = 0; i <= size; i++) {
+		if (array[i] == 0) {
+			count++;
+		}
+	}
+
+	return count;
 }
